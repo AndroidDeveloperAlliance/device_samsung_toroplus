@@ -5,13 +5,13 @@ PRODUCT_RELEASE_NAME := GN-CDMA
 TARGET_BOOTANIMATION_NAME := vertical-720x1280
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/ada/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/ada/config/nfc_enhanced.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := toroplus
@@ -22,4 +22,5 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.0.4/IMM76D/L700FD02:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.0.4 IMM76D L700FD02 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_ID=JRN84D BUILD_FINGERPRINT=google/mysid/toroplus:4.1.1/JRN84D/336647:user/release-keys PRIVATE_BUILD_DESC="mysid-user 4.1.1 JRN84D 336647 release-keys" BUILD_NUMBER=235179
+
