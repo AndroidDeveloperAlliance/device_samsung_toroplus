@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ada_toroplus.mk
+    $(LOCAL_DIR)/ada.mk
